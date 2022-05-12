@@ -1,0 +1,33 @@
+Algorithm,Category,Dataset,Precision,Recall,F-score
+AREP,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9938574938574939,1.0,0.9969192852741837
+AREP,realAWSCloudwatch,grok_asg_anomaly,0.9826224328593998,0.6666666666666666,0.7943805874840357
+AREP,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9975369458128079,1.0,0.998766954377312
+AREP,realKnownCause,rogue_agent_key_updown,0.9925512104283054,1.0,0.9962616822429906
+Bayesian Changepoint,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9987654320987653,1.0,0.9993823347745522
+Bayesian Changepoint,realAWSCloudwatch,grok_asg_anomaly,0.9925531914893617,1.0,0.996262680192205
+Bayesian Changepoint,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9902200488997555,0.5,0.6644790812141099
+Bayesian Changepoint,realKnownCause,rogue_agent_key_updown,0.9888682745825602,1.0,0.9944029850746268
+contextOSE,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9975339087546238,1.0,0.9987654320987653
+contextOSE,realAWSCloudwatch,grok_asg_anomaly,0.9952,0.6666666666666666,0.7984595635430038
+contextOSE,realAWSCloudwatch,rds_cpu_utilization_cc0c53,1.0,1.0,1.0
+contextOSE,realKnownCause,rogue_agent_key_updown,0.0,0.0,0
+DeepAnT-CNN,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9950799507995081,1.0,0.997533908754624
+DeepAnT-CNN,realAWSCloudwatch,grok_asg_anomaly,0.6359918200408998,0.3333333333333333,0.43741209563994377
+DeepAnT-CNN,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.8980044345898004,1.0,0.9462616822429907
+DeepAnT-CNN,realKnownCause,rogue_agent_key_updown,0.9647058823529412,1.0,0.9820359281437125
+htmjava,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9853836784409258,1.0,0.992638036809816
+htmjava,realAWSCloudwatch,grok_asg_anomaly,0.9883474576271187,1.0,0.9941395844432606
+htmjava,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9830097087378641,0.5,0.662847790507365
+htmjava,realKnownCause,rogue_agent_key_updown,0.0,0.0,0
+numentaTM,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9853836784409258,1.0,0.992638036809816
+numentaTM,realAWSCloudwatch,grok_asg_anomaly,0.9925531914893617,1.0,0.996262680192205
+numentaTM,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9830097087378641,0.5,0.662847790507365
+numentaTM,realKnownCause,rogue_agent_key_updown,0.9833948339483395,0.5,0.6629353233830846
+skyline,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9950799507995081,1.0,0.997533908754624
+skyline,realAWSCloudwatch,grok_asg_anomaly,0.9925531914893617,1.0,0.996262680192205
+skyline,realAWSCloudwatch,rds_cpu_utilization_cc0c53,1.0,0.5,0.6666666666666666
+skyline,realKnownCause,rogue_agent_key_updown,0.9870370370370372,0.5,0.663760896637609
+twitterADVec,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,1.0,1.0,1.0
+twitterADVec,realAWSCloudwatch,grok_asg_anomaly,0.9779874213836478,0.3333333333333333,0.4972022382094324
+twitterADVec,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9987669543773119,1.0,0.9993830968537939
+twitterADVec,realKnownCause,rogue_agent_key_updown,0.9852125693160814,0.5,0.6633478531425016

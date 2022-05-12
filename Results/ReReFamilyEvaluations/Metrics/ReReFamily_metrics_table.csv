@@ -1,0 +1,13 @@
+Algorithm,Category,Dataset,Precision,Recall,F-score,AUC
+Alter-ReRe,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.0,0.0,0,0.918417721518987
+Alter-ReRe,realAWSCloudwatch,grok_asg_anomaly,0.9841772151898733,0.3333333333333333,0.49799839871897517,0.881243515636579
+Alter-ReRe,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.0,0.0,0,0.924936708860759
+Alter-ReRe,realKnownCause,rogue_agent_key_updown,0.9870370370370372,0.5,0.663760896637609,0.326485763424421
+AREP,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.9938574938574939,1.0,0.9969192852741837,0.977151898734177
+AREP,realAWSCloudwatch,grok_asg_anomaly,0.9826224328593998,0.6666666666666666,0.7943805874840357,0.952756780791462
+AREP,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.9975369458128079,1.0,0.998766954377312,0.905759493670886
+AREP,realKnownCause,rogue_agent_key_updown,0.9925512104283054,1.0,0.9962616822429906,0.543283011656793
+ReRe,realAWSCloudwatch,ec2_cpu_utilization_ac20cd,0.0,0.0,0,0.661455696202531
+ReRe,realAWSCloudwatch,grok_asg_anomaly,1.0,0.3333333333333333,0.5,0.519823625314954
+ReRe,realAWSCloudwatch,rds_cpu_utilization_cc0c53,0.0,0.0,0,0.827025316455696
+ReRe,realKnownCause,rogue_agent_key_updown,0.0,0.0,0,0.508264857634244
