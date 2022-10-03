@@ -102,18 +102,6 @@ def dump_hyperparameters(self, self_start, param_filename):
         }
         csv_writer__.writerow(row)
         row = {
-            'hyperparameter': 'DO_DIFF',
-            'value': self.DO_DIFF,
-            'description': 'Whether to use the difference of data values.'
-        }
-        csv_writer__.writerow(row)
-        row = {
-            'hyperparameter': 'DO_SCAL',
-            'value': self.DO_SCAL,
-            'description': 'Whether to scale the data between -1 and 1.'
-        }
-        csv_writer__.writerow(row)
-        row = {
             'hyperparameter': 'DO_DIV',
             'value': self.DO_DIV,
             'description': 'Whether to divide data by the maximum times 1,1.'
