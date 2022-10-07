@@ -4,20 +4,25 @@ CSV FILE EXPORT FUNCTIONS
 This file makes possible exporting ReRe data to .csv files.
 """
 
-
 import time as timelib
 import numpy as np
 import csv
 from datetime import datetime
 from pathlib import Path
+import os
 
 
 def init_to_csv(self):
     if not self.EVAL_EXPORT:
         # creating file
         current_time = datetime.now().strftime('%Y%m%d%H%M%S')
-        result_filename = 'results/{}{}_results.csv'.format(current_time, self.inst_num)
-        param_filename = 'results/{}{}_hyperparams.csv'.format(current_time, self.inst_num)
+        path_to_results = 'results'
+
+        if not os.path.exists(path_to_results):
+            os.mkdir(path_to_results)
+
+        result_filename = f'{path_to_results}/{current_time}{self.inst_num}_results.csv'
+        param_filename = f'{path_to_results}/{current_time}{self.inst_num}_hyperparams.csv'
 
         if self.USE_OFFSET_COMP:
             if self.USE_AUTOMATIC_OFFSET:
@@ -90,7 +95,7 @@ def init_to_csv(self):
         # ensure directory exists
         Path(result_folder_path).mkdir(parents=True, exist_ok=True)
 
-        with open(result_file_path , 'w', newline='') as csv_file:
+        with open(result_file_path, 'w', newline='') as csv_file:
             csv_writer = csv.DictWriter(csv_file, fieldnames=['index', 'anomaly_score'])
             csv_writer.writeheader()
 
@@ -400,7 +405,7 @@ def dump_results(self, time, data_names, result_filename):
         with open(result_filename, 'a') as csv_file_:
             csv_writer_ = csv.DictWriter(csv_file_, fieldnames=data_names)
 
-            if np.isnan(self.anomaly_aggr[time]) or not(self.anomaly_aggr[time]):
+            if np.isnan(self.anomaly_aggr[time]) or not (self.anomaly_aggr[time]):
                 anomaly_score = 0
             else:
                 anomaly_score = 1
