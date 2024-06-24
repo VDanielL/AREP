@@ -1,5 +1,8 @@
 # AREP
-Accompanying repository for a paper on anomaly detection on network telemetry data.
+Accompanying repository for the following paper on anomaly detection on network telemetry data: 
+
+_Farkas, K. **AREP**: an adaptive, machine learning-based algorithm for real-time anomaly detection on network telemetry data. Neural Comput & Applic **35**, 6079–6094 (2023)._ [https://doi.org/10.1007/s00521-022-08000-y](https://doi.org/10.1007/s00521-022-08000-y)
+
 
 ### Code
 This folder contains the code of the AREP and Alter-Re² algorithms, our data type classification algorithm, and our novel ROC (Receiver Operating Characteristic) curve generation algorithm.
